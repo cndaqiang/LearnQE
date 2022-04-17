@@ -1,0 +1,5 @@
+&INPUT
+fildyn="matdyn" !读入matdyn0,matdyn[1-N],找不到matdyn0,也会
+flfrc='matdyn.ifc' ! 原子间力常数文件,Output file containing the IFC in real space (must be specified)
+/
+

@@ -1,0 +1,7 @@
+&INPUT
+flfrc="matdyn.ifc"  !同q2r
+q_in_band_form=.true.
+/
+2
+0.0 0.0 0.0 10 \Gamma
+0.5 0.0 0.0 0  X

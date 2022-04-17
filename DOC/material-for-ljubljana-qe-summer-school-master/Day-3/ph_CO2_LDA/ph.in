@@ -1,0 +1,31 @@
+&INPUTPH
+prefix='pwscf'
+tr2_ph=1d-12 !阈值,提高可以减少部分虚频
+fildyn='matdyn'!保存用于后处理文件
+
+epsil=.true. !红外活性
+lraman=.true. !拉曼活性
+
+!qplot=.true. !读入q点列表,需要设置ldisp=.true.
+!q2d = .false. !利用q点列表生成二维的q点网格
+!q_in_band_form = .false. !.true. 和pwscf计算能带一样,指定高对称q点和q点间隔nq, .false. 直接计算输入的q点
+ldisp=.true.  !使用nq1,nq2,nq3设置q点网格,或者qplot=.true.读入q点列表
+!  nq1 = 1,
+!  nq2 = 1,
+!  nq3 = 1,
+!nat_todo=0 !不计算指定q点,而是计算指定原子的自由度对应的声子
+!electron_phonon='' !电声耦合系数
+!asr=.true.
+
+/
+0.0 0.0 0.0
+!q点列表,原子列表
+!> ldisp=.false., qplot=.false., 只能输入一个q点列表,qx,qy,qz
+!0.0 0.0  0.0
+!> ldisp=.true.,qplot=.false., 空,使用上面的nq1,2,3
+!> ldisp=.true.,qplot=.true., 类似于K点的输入,具体见q2d,q_in_band_form
+!nqs
+!q1x q1y q1z nq1
+!...
+!qnx qny qnz nqn
+!

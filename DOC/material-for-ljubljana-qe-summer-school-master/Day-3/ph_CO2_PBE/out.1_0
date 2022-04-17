@@ -1,0 +1,160 @@
+
+     Program PHONON v.6.6 starts on 14Apr2022 at 16:31:57 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    18 processors
+
+     MPI processes distributed on     1 nodes
+     path-images division:  nimage    =       6
+     R & G space division:  proc/nbgrp/npool/nimage =       3
+     Fft bands division:     nmany     =       1
+      Title line not specified: using 'default'.
+ CNQ: read_file_new,g
+
+     Reading xml data from directory:
+
+     ./pwscf.save/
+ CNQ: read_xml_file,g
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min        3028    3028    787               217556   217556   28801
+     Max        3029    3029    787               217559   217559   28803
+     Sum        9085    9085   2361               652671   652671   86407
+ 
+     Reading collected, re-writing distributed wavefunctions
+
+      Image parallelization. There are  6 images and     6 representations
+      The estimated total work is    10 self-consistent (scf) runs
+      I am image number     1 and my work is about    2 scf runs. I calculate: 
+      q point number     1, representations:
+       2
+
+     Calculation of q =    0.0000000   0.0000000   0.0000000
+
+     default                                                                    
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       1.8897  a.u.
+     unit-cell volume          =    6748.3345 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     kinetic-energy cut-off    =      80.0000  Ry
+     charge density cut-off    =     320.0000  Ry
+     convergence threshold     =      1.0E-12
+     beta                      =       0.7000
+     number of iterations used =            4
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+
+
+     celldm(1)=    1.88973  celldm(2)=    0.00000  celldm(3)=    0.00000
+     celldm(4)=    0.00000  celldm(5)=    0.00000  celldm(6)=    0.00000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = ( 10.0000  0.0000  0.0000 )  
+               a(2) = (  0.0000 10.0000  0.0000 )  
+               a(3) = (  0.0000  0.0000 10.0000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.1000  0.0000  0.0000 )  
+               b(2) = (  0.0000  0.1000  0.0000 )  
+               b(3) = (  0.0000  0.0000  0.1000 )  
+
+
+     Atoms inside the unit cell: 
+
+     Cartesian axes
+
+     site n.  atom      mass           positions (alat units)
+        1     O   15.9994   tau(    1) = (    6.16845    5.00000    5.00000  )
+        2     O   15.9994   tau(    2) = (    3.83155    5.00000    5.00000  )
+        3     C   12.0107   tau(    3) = (    5.00000    5.00000    5.00000  )
+
+     Computing dynamical matrix for 
+                    q = (   0.0000000   0.0000000   0.0000000 )
+ 
+     17 Sym.Ops. (with q -> -q+G )
+
+
+     G cutoff =   28.9460  ( 217556 G-vectors)     FFT grid: (108,108,108)
+     number of k points=     3
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   1.0000000
+        k(    2) = (  -0.0500000   0.0000000   0.0000000), wk =   0.3333333
+        k(    3) = (   0.0000000   0.0000000  -0.0500000), wk =   0.6666667
+
+     PseudoPot. # 1 for O  read from file:
+     ./O_ONCV_PBE_fr.upf
+     MD5 check sum: cce762a7abf7b05e8b0c1bb572795511
+     Pseudo is Norm-conserving + core correction, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  936 points,  5 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+
+     PseudoPot. # 2 for C  read from file:
+     ./C_ONCV_PBE_fr.upf
+     MD5 check sum: 289937457f5bc26ca1c868156df6bf43
+     Pseudo is Norm-conserving + core correction, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1248 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     Mode symmetry, D_4h(4/mmm) point group:
+
+
+     Electric field:
+     Dielectric constant
+     Born effective charges as d Force / d E
+
+
+     Atomic displacements:
+     There are    6 irreducible representations
+
+     Representation     1      1 modes -  Not done in this run
+
+     Representation     2      2 modes -  To be done
+
+     Representation     3      1 modes -  Not done in this run
+
+     Representation     4      1 modes -  Not done in this run
+
+     Representation     5      2 modes -  Not done in this run
+
+     Representation     6      2 modes -  Not done in this run
+
+     Compute atoms:     1,    2,
+
+
+     PHONON       :     10.67s CPU     10.99s WALL
+
+
+     Electric Fields Calculation
+
+      iter #   1 total cpu time :   141.4 secs   av.it.:   9.0
+      thresh= 1.000E-02 alpha_mix =  0.700 |ddv_scf|^2 =  5.004E-07
+
+      iter #   2 total cpu time :   208.1 secs   av.it.:  13.9
+      thresh= 7.074E-05 alpha_mix =  0.700 |ddv_scf|^2 =  1.292E-06

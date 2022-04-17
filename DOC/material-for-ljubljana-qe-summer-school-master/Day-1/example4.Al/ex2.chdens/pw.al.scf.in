@@ -1,0 +1,31 @@
+ &CONTROL
+    prefix = 'pwscf'
+
+    ! outdir = 'temporary directory for large files'
+    ! pseudo_dir = 'directory where pp-files are kept',
+ /
+
+ &SYSTEM    
+    ibrav =  2,
+    celldm(1) = 7.50,
+    nat =  1,
+    ntyp = 1,
+    ecutwfc = 30, 
+    ecutrho = 500.0,
+
+    occupations = 'smearing',
+    smearing = 'm-v',
+    degauss = 0.01
+ /
+
+ &ELECTRONS
+ /
+
+ATOMIC_SPECIES
+   Al  26.98 Al_ONCV_PBE_sr.upf
+   
+ATOMIC_POSITIONS alat
+   Al 0.00 0.00 0.00
+   
+K_POINTS automatic
+   12 12 12 1 1 1

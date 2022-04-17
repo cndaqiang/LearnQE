@@ -1,0 +1,5 @@
+ &PATH
+ nstep_path = 2 !最大步数
+ num_of_images = 7
+ first_last_opt = .True.
+ /

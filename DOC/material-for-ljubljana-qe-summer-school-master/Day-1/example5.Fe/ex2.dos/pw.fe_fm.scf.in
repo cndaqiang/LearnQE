@@ -1,0 +1,38 @@
+ &CONTROL
+    prefix='pwscf',
+
+    !pseudo_dir = 'directory with pseudopotentials',
+    !outdir = 'temporary directory for large files'
+    !verbosity = 'high',
+ /
+ 
+ &SYSTEM
+    ibrav = 3,
+    celldm(1) = 5.42,
+    nat = 1,
+    ntyp = 1,
+    ecutwfc = 80.0,
+    ecutrho = 320.0,
+
+    occupations='smearing',
+    smearing='mv',
+    degauss=0.01,
+
+    nspin = 2, 
+    starting_magnetization(1)= 0.6
+ /
+
+ &ELECTRONS
+ /
+
+ATOMIC_SPECIES
+# the second field, atomic mass, is not actually used 
+# except for MD calculations
+   Fe  1.  Fe_ONCV_PBE_sr.upf
+   
+ATOMIC_POSITIONS crystal
+   Fe 0.0  0.0  0.0 
+! this is a comment that the code will ignore
+
+K_POINTS automatic
+   12 12 12   1 1 1

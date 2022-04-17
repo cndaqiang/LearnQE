@@ -1,0 +1,10 @@
+&INPUT
+flfrc="matdyn.ifc"  !同q2r
+fldyn="matdyn"
+fleig='matdyn.eig'
+dos=.false.
+q_in_band_form=.false. 
+/
+2
+0.0 0.0 0.0 2
+0.0 0.5 0.0 0

@@ -1,0 +1,127 @@
+
+     Program NEB v.6.4.1 starts on  8Mar2020 at 14: 6:24 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     2 processors
+
+     MPI processes distributed on     1 nodes
+     path-images division:  nimage    =       2
+
+     parsing_file_name: neb.in
+     Reading input from pw_1.in
+ CNQ. ====== check read_namelists from qe
+     Message from routine cell_base_init:
+     DEPRECATED: use true lattice parameter, not A to a.u. conversion factor
+     Reading input from pw_2.in
+ CNQ. ====== check read_namelists from qe
+     Message from routine cell_base_init:
+     DEPRECATED: use true lattice parameter, not A to a.u. conversion factor
+
+     initial path length           =  4.1759 bohr
+     initial inter-image distance  =  0.6960 bohr
+
+     string_method                 =    neb
+     restart_mode                  =    from_scratch
+     opt_scheme                    =    quick-min
+     num_of_images                 =    7
+     nstep_path                    =    2
+     CI_scheme                     =    no-CI
+     first_last_opt                =    F
+     use_freezing                  =    F
+     ds                            =    1.0000 a.u.
+     k_max                         =    0.1000 a.u.
+     k_min                         =    0.1000 a.u.
+     suggested k_max               =    0.6169 a.u.
+     suggested k_min               =    0.6169 a.u.
+     path_thr                      =    0.0500 eV / A
+
+     ------------------------------ iteration   1 ------------------------------
+
+     cpu =  0   tcpu =      0.4    self-consistency for image   1
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+     cpu =  0   tcpu =     67.7    self-consistency for image   2
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+     cpu =  0   tcpu =    138.1    self-consistency for image   4
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+     cpu =  0   tcpu =    199.1    self-consistency for image   6
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+
+     activation energy (->) =  19.267475 eV
+     activation energy (<-) =  18.606950 eV
+
+     image        energy (eV)        error (eV/A)        frozen
+
+         1       -455.0343552            3.837528            T
+         2       -450.9349636           33.633090            F
+         3       -441.7620846           85.442669            F
+         4       -435.7668804           94.813732            F
+         5       -441.7997302           84.921274            F
+         6       -450.5685166           31.214297            F
+         7       -454.3738304            3.409528            T
+
+     path length          =  4.176 bohr
+     inter-image distance =  0.696 bohr
+
+     ------------------------------ iteration   2 ------------------------------
+
+     cpu =  0   tcpu =    248.6    self-consistency for image   2
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+     cpu =  0   tcpu =    483.6    self-consistency for image   4
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+     cpu =  0   tcpu =    587.9    self-consistency for image   6
+     Message from routine setup:
+     DEPRECATED: symmetry with ibrav=0, use correct ibrav instead
+
+     activation energy (->) =   4.000282 eV
+     activation energy (<-) =   3.339758 eV
+
+     image        energy (eV)        error (eV/A)        frozen
+
+         1       -455.0343552            3.837528            T
+         2       -451.0340727           26.674261            F
+         3       -452.8937589            9.666536            F
+         4       -453.2537828            3.170302            F
+         5       -453.4474208            6.923784            F
+         6       -451.4469408           23.342961            F
+         7       -454.3738304            3.409528            T
+
+     path length          =  4.687 bohr
+     inter-image distance =  0.781 bohr
+
+     ---------------------------------------------------------------------------
+
+
+     neb: reached the maximum number of steps
+
+     NEB          :  11m 9.24s CPU  11m27.48s WALL
+
+
+   This run was terminated on:  14:17:52   8Mar2020            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code.. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[55267,1],1]
+  Exit code:    1
+--------------------------------------------------------------------------

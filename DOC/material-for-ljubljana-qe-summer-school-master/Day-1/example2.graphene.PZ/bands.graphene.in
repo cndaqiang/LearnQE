@@ -1,0 +1,24 @@
+ &BANDS
+    !读取outdir/pwscf
+    prefix  = 'pwscf',
+    ! otudir  = '/tmp/'
+    
+    !输出文件filband
+    filband = 'graphene.bands.dat',
+    
+    !spin_component = 1/2 !1 up, 2 down
+    !lsigma #noncollinear case
+    !
+    !If lp = .true. matrix elements of the momentum operator p between conduction and valence bands
+    !              are computed and written to file specified in filp
+    !lp
+    !filp
+    
+    lsym = .true.,
+    !no_overlap 
+    ! plot_2d  2D格式 kx,ky,Energy
+    !firstk
+    !lastk
+
+ /
+

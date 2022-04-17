@@ -1,0 +1,105 @@
+
+     coordinates at iteration   0
+
+
+ATOMIC_POSITIONS (crystal)
+C        0.499983753   0.500000000   0.451178473
+N        0.509641683   0.500000000   0.500160067
+H        0.491041231   0.500000000   0.541994793
+
+
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum       22733   13637   3397              2578383  1198487  149781
+
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       1.8897  a.u.
+     unit-cell volume          =   53986.6767 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            3
+     number of electrons       =        10.00
+     number of Kohn-Sham states=            5
+     kinetic-energy cutoff     =      30.0000  Ry
+     charge density cutoff     =     200.0000  Ry
+     convergence threshold     =      1.0E-06
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation      = PBE ( 1  4  3  4 0 0)
+
+     celldm(1)=   1.889726  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  20.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000  20.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000  20.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.050000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.050000  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.050000 )  
+
+
+     PseudoPot. # 1 for C  read from file:
+     ./C_ONCV_PBE_fr.upf
+     MD5 check sum: 289937457f5bc26ca1c868156df6bf43
+     Pseudo is Norm-conserving + core correction, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1248 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     PseudoPot. # 2 for N  read from file:
+     ./N_ONCV_PBE_fr.upf
+     MD5 check sum: c32f24f9d795c7501a1bb49200837c0f
+     Pseudo is Norm-conserving + core correction, Zval =  5.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1058 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     PseudoPot. # 3 for H  read from file:
+     ./H_ONCV_PBE_fr.upf
+     MD5 check sum: 7de1f3f262afbb95e2ae740af32c06ec
+     Pseudo is Norm-conserving, Zval =  1.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1166 points,  3 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+
+     atomic species   valence    mass     pseudopotential
+        C              4.00    12.01070     C ( 1.00)
+        N              5.00    14.00670     N ( 1.00)
+        H              1.00     1.00794     H ( 1.00)
+
+      2 Sym. Ops. (no inversion) found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           C   tau(   1) = (   9.9996751  10.0000000   9.0235695  )
+         2           N   tau(   2) = (  10.1928337  10.0000000  10.0032013  )
+         3           H   tau(   3) = (   9.8208246  10.0000000  10.8398959  )
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:  2578383 G-vectors     FFT dimensions: ( 180, 180, 180)
+
+     Smooth grid:  1198487 G-vectors     FFT dimensions: ( 135, 135, 135)

@@ -1,0 +1,2 @@
+file  'occband0.dat.png'  
+duration 0.5 

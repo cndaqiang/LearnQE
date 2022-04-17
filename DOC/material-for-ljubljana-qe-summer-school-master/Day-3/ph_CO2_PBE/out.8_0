@@ -1,0 +1,36 @@
+
+     Program PHONON v.6.6 starts on 14Apr2022 at 15:36:15 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     9 processors
+
+     MPI processes distributed on     1 nodes
+     path-images division:  nimage    =       9
+     Fft bands division:     nmany     =       1
+      Title line not specified: using 'default'.
+ CNQ: read_file_new,g
+
+     Reading xml data from directory:
+
+     ./pwscf.save/
+ CNQ: read_xml_file,g
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        9085    9085   2253               652671   652671   81313
+ 

@@ -1,0 +1,12 @@
+Phonons on a uniform q-grid
+ &inputph
+  prefix='pwscf',
+  tr2_ph = 1.0d-14,
+  ldisp = .true.,
+  nq1 = 8,
+  nq2 = 8, 
+  nq3 = 8,
+  outdir='../'
+  fildyn='matdyn',
+!lraman=.true.
+ /

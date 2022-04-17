@@ -1,0 +1,7 @@
+&INPUTPH
+!fildyn='matdyn'!保存用于后处理文件
+epsil=.true.
+!lraman=.true.
+/
+0.0 0.0 0.0
+

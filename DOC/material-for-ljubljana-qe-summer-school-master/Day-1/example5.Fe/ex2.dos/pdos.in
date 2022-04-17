@@ -1,0 +1,6 @@
+&PROJWFC
+    filpdos = 'fe.pdos'
+    Emin = 8.0
+    Emax = 25.0,
+    DeltaE = 0.1
+/

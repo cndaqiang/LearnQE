@@ -1,0 +1,9 @@
+&INPUT
+fildyn='matdyn1'
+!filxsf='dynmat.axsf'!输出展示文件
+filout='dynmat.out'
+filmol='dynmat.mold'
+filxsf='dynmat.axsf'
+fileig='dynmat.eig'
+/
+

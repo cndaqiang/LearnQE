@@ -1,0 +1,19 @@
+&INPUTPP
+    prefix="pwscf"
+    !filplot = "chargedensity"  !输出用于后续处理，不必须输出
+    plot_num = 17
+    !plot_num = 17 价电子 all-electron valence charge density
+    !can be performed for PAW calculations only
+    !requires a very dense real-space grid!
+    !plot_num = 21 全电子 all-electron charge density (valence+core).
+    !spin_component = 0  !0 All, 1 up, 2 down
+/
+&PLOT
+    nfile = 1 
+    weight(1)     =  1.0, !各输入文件权重
+    iflag  = 3 
+    weight(1) = 1.0
+    output_format = 5 !6 cube, 5xsf
+    !fileout = 'chargedensity.cube' 
+    fileout = 'chargedensity.xsf' 
+/

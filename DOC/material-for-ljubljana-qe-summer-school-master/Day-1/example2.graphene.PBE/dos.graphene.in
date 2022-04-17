@@ -1,0 +1,14 @@
+ &DOS
+    prefix = 'pwscf',
+    ! otudir = '/tmp'
+    !这几个保持默认就好了，算法上的选择
+    !bz_sum
+    !ngauss
+    !degauss
+    !能量区间和步长
+    !Emin
+    !Emax
+    !DeltaE
+    !保存到fildos
+    fildos = 'graphene.dos'
+ /

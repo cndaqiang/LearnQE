@@ -1,0 +1,1187 @@
+
+     Program PWSCF v.6.6 starts on 15Apr2022 at 10: 7:43 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    10 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      10
+     Fft bands division:     nmany     =       1
+     Reading input from input.in
+Warning: card &CELL ignored
+Warning: card / ignored
+
+     Current dimensions of program PWSCF are:
+     Max number of different atomic species (ntypx) = 10
+     Max number of k-points (npk) =  40000
+     Max angular momentum in pseudopotentials (lmaxx) =  3
+     Message from routine cell_base_init:
+     DEPRECATED: use true lattice parameter, not A to a.u. conversion factor
+
+     Subspace diagonalization in iterative solution of the eigenvalue problem:
+     a serial algorithm will be used
+
+     Message from routine setup:
+     using ibrav=0 with symmetry is DISCOURAGED, use correct ibrav instead
+ CNQ:init_run
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         908     908    225                65264    65264    8129
+     Max         909     909    226                65269    65269    8133
+     Sum        9085    9085   2253               652671   652671   81313
+ 
+ nkstot,in init_run           1
+
+
+     bravais-lattice index     =            0
+     lattice parameter (alat)  =       1.88972612462577  a.u.
+     unit-cell volume          =    6748.33449460037355 (a.u.)^3
+     number of atoms/cell      =            3
+     number of atomic types    =            2
+     number of electrons       =        16.00
+     number of Kohn-Sham states=           16
+     kinetic-energy cutoff     =      80.0000  Ry
+     charge density cutoff     =     320.0000  Ry
+     convergence threshold     =      1.0E-08
+     mixing beta               =       0.7000
+     number of iterations used =            8  plain     mixing
+     Exchange-correlation= PZ
+                           (   1   1   0   0   0   0   0)
+     nstep                     =           50
+
+
+     celldm(1)=   1.889726  celldm(2)=   0.000000  celldm(3)=   0.000000
+     celldm(4)=   0.000000  celldm(5)=   0.000000  celldm(6)=   0.000000
+
+     crystal axes: (cart. coord. in units of alat)
+               a(1) = (  10.000000   0.000000   0.000000 )  
+               a(2) = (   0.000000  10.000000   0.000000 )  
+               a(3) = (   0.000000   0.000000  10.000000 )  
+
+     reciprocal axes: (cart. coord. in units 2 pi/alat)
+               b(1) = (  0.100000  0.000000  0.000000 )  
+               b(2) = (  0.000000  0.100000  0.000000 )  
+               b(3) = (  0.000000  0.000000  0.100000 )  
+
+
+     PseudoPot. # 1 for O  read from file:
+     ./O_ONCV_PZ_fr.upf
+     MD5 check sum: e4cb32de9535831b14d175ac74f7b26c
+     Pseudo is Norm-conserving + core correction, Zval =  6.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of  926 points,  5 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+                l(5) =   2
+
+     PseudoPot. # 2 for C  read from file:
+     ./C_ONCV_PZ_fr.upf
+     MD5 check sum: a28eb8635dab598f4679ee94cbd88fb6
+     Pseudo is Norm-conserving + core correction, Zval =  4.0
+     Generated using ONCVPSP code by D. R. Hamann
+     Using radial grid of 1234 points,  4 beta functions with: 
+                l(1) =   0
+                l(2) =   0
+                l(3) =   1
+                l(4) =   1
+
+     atomic species   valence    mass     pseudopotential
+        O              6.00    15.99940     O ( 1.00)
+        C              4.00    12.01070     C ( 1.00)
+
+     16 Sym. Ops., with inversion, found
+
+
+
+   Cartesian axes
+
+     site n.     atom                  positions (alat units)
+         1           O   tau(   1) = (   6.1519999   5.0000000   5.0000000  )
+         2           O   tau(   2) = (   3.8480001   5.0000000   5.0000000  )
+         3           C   tau(   3) = (   5.0000000   5.0000000   5.0000000  )
+ CNQ:nkstot in summary           1           1
+
+     number of k points=     1
+                       cart. coord. in units 2pi/alat
+        k(    1) = (   0.0000000   0.0000000   0.0000000), wk =   2.0000000
+
+     Dense  grid:   652671 G-vectors     FFT dimensions: ( 108, 108, 108)
+ nkstot,after summary           1
+
+     Estimated max dynamical RAM per process >      54.23 MB
+
+     Estimated total dynamical RAM >     542.29 MB
+ CNQ:rhoin,allocate_fft  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ CNQ:MyG:  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ -0.100000000000000       0.000000000000000E+000  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000  0.000000000000000E+000
+ -0.200000000000000       0.000000000000000E+000  0.000000000000000E+000
+  0.200000000000000       0.100000000000000      -0.200000000000000     
+  0.000000000000000E+000  0.100000000000000      -0.200000000000000     
+ -0.100000000000000       0.100000000000000      -0.200000000000000     
+  0.100000000000000      -0.200000000000000      -0.200000000000000     
+  0.000000000000000E+000 -0.300000000000000       0.000000000000000E+000
+  0.000000000000000E+000
+ CNQ:rhoin,hinit0  0.000000000000000E+000  0.000000000000000E+000
+  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+ CNQ:rhoin, in potinit F F
+ CNQ:rhoin, starting_pot Case c
+
+     Initial potential from superposition of free atoms
+
+     starting charge   15.99995, renormalised to   16.00000
+
+     negative rho (up, down):  7.553E-05 0.000E+00
+ CNQ:rhoin,potinit  2.329262388026547E-007 -4.760144563276302E-008
+ -1.369335532487604E-007  5.546912163801245E-008  7.435359488117191E-008
+     Starting wfcs are   12 randomized atomic wfcs +    4 random wfcs
+        _____ ____    _    ______        __      
+       |_6.6_|  _ \  / \  |  _ \ \      / /      
+         | | | | | |/ _ \ | |_) \ \ /\ / /       
+         | | | |_| / ___ \|  __/ \ V  V /        
+         |_| |____/_/   \_\_|     \_/\_/         
+      
+     TDPW: 
+     Please cite TDAP work done with this code as:
+        The Journal of chemical physics 129.5 (2008): 054110
+        Advanced Theory and Simulations 1.8 (2018): 1870018
+        Advanced Theory and Simulations 1.8 (2018): 1800055
+        Nature Communications 11.1 (2020): 1-8
+      
+     Any question, Please contact cndaqiang@IOP 
+        ^_^   PAW is too hard for me   ^_^   
+        ^_^     SOC need to test    ^_^   
+     TDPW: ========================= 
+     TDPW: calculation is relax and not do TDevolve.
+     TDPW: ========================= 
+     -------------------------
+     TDPW: input parameters   
+     QEPW: calculation            =      relax
+     QEPW: ion_dynamics           =       bfgs
+     TDPW: tddft_is_on            =          F
+     TDPW: suddenChangeFix        =          T
+     TDPW: diagonSteps            =         50
+     TDPW: edt                    =    1.00000
+     QEPW: dt                     =   20.00000
+     QEPW: nstep                  =         50
+     TDPW: TDIfinal               =         50
+     TDPW: mstep                  =       1000
+     TDPW: screen                 =          F
+     TDPW: nwevc                  =          0
+     TDPW: punchks                =          T
+     TDPW: punchtdks              =          F
+     TDPW: TDDebug                =          F
+     TDPW: td_quiet               =          F
+     TDPW: cal_pop0               =          F
+     TDPW: td_constrained         =          F
+     QEPW: diago_full_acc         =          F
+     QEPW: conv_thr(d\rho)        =  0.100E-07
+     TDPW: hybrid_conv_thr        =  0.100E-07
+     QEPW: scf_must_converge      =          T
+     TDPW: hybrid_must_converge   =          F
+     TDPW: hybrid_loop_converge   =          F
+     TDPW: hybrid_dynamic_thr     =          F
+     TDPW: hybrid_multi_thr       =  0.100E+02
+     TDPW: electron_maxstep       =          F
+     TDPW: hybrid_maxstep         =          F
+     TDPW: Debug parameters         
+     TDPW: TDChangexk(BUG)        =          F
+     TDPW: TDg2_kin               =          T
+     TDPW: TDinit_us_2            =          F
+     TDPW: norm_prod              =          F
+     TDPW: inv_prod               =          T
+     TDPW: current_debug          =          F
+     TDPW: td_current_k           =          F
+     TDPW: td_Big_MeM             =          F
+     -- rho/D/L... by tdks  --
+     TDPW: use_tdks               =           F
+     TDPW: td_ht                  =           0
+     TDPW: orthogonalStep         =          -1
+     ---------i-PI------------
+     TDPW: [ td_i_pi ]            =          F
+     TDPW: [td_nbeadstot]         =          1
+     TDPW: td_tract_atom          =          T
+     -------------------------
+     TDPW:[GaugeField(TDDFT)]     =         T
+     TDPW: DFTAfield              =          F
+     TDPW: [tefield(DFT)  ]       =          F
+     TDPW: [tefield(TDDFT)]       =          F
+     TDPW: td_outputD             =          T
+     TDPW: td_outputL             =          T
+     TDPW: td_outputS             =          F
+     TDPW: td_transitionD         =          F
+     TDPW: use_origin             =          F
+     TDPW: [originx,y,z]          =   0.0000  0.0000  0.0000
+     TDPW: td_Lrcut[Bohr]         = -10.0000
+     TDPW: origin[Ang]            =   0.0000  0.0000  0.0000
+     TDPW: td_Lrcut[Ang]          =  -5.2918
+     TDPW: LastDiagonA            =          F
+     TDPW: LastDiagonE            =          F
+     TDPW: LastDiagonExp          =          F
+     TDPW: tdexp_fwfft            =          F
+     TDPW: td_real_evc            =          F
+     QEPW: B_field                =   0.0000  0.0000  0.0000
+     TDPW: scissor_val[eV]        =   0.0000
+     TDPW: scissor_con[eV]        =   0.0000
+     TDPW: addHscissor            =          T
+     ---- develop ------------
+     TDPW: td_outputF(Force)      =          T
+     TDPW: td_SubtractSumF        =          T
+     TDPW: td_FixMC(CenterOfMass) =          T
+     TDPW: td_forces_kscf         =          F
+     TDPW: td_outputVelocity_step =          F
+     TDPW: td_restartingpot       =          F
+     TDPW: first_loop_diagon      =          F
+     ---- Test ---------------
+     TDPW: td_DDB                 =          F
+     TDPW: td_DDB_start[+homo]    =          0
+     TDPW: td_DDB_end[+homo]      =          1
+     TDPW: td_DDB_digon           =          F
+     TDPW: td_DDB_kbT             =   0.0019
+     TDPW: td_DDB_nabla           =   0.0000
+     TDPW: td_random_temperature  =   0.0000
+     TDPW: mean_csave_scale       =   0.0000
+     ---- Not support Now ----
+     TDPW: [x]rho_debug           =          F
+     TDPW: [x]rho_build           =          F
+     TDPW: [x]rho_evc             =          F
+     TDPW: [x]DPEqSumBand         =          F
+     TDPW: [x]tdSmethod(100)      =          F
+     TDPW: [x]scissor             =   0.0000
+      
+     =====================
+     MD step ( Diagon ) = 1 )
+     =====================
+
+     TDPW: Electric field is     0.000000000    0.000000000    0.000000000
+     TDPW: Not add force and energy of field with atoms now
+
+     total cpu time spent up to now is        1.5 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-02,  avg # of iterations =  8.0
+
+     negative rho (up, down):  2.106E-05 0.000E+00
+
+     total cpu time spent up to now is        2.0 secs
+
+     total energy              =     -77.81284080 Ry
+     estimated scf accuracy    <       0.41965601 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.62E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.197E-05 0.000E+00
+
+     total cpu time spent up to now is        2.3 secs
+
+     total energy              =     -77.89108307 Ry
+     estimated scf accuracy    <       0.36051233 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.25E-03,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.683E-06 0.000E+00
+
+     total cpu time spent up to now is        2.5 secs
+
+     total energy              =     -77.96719870 Ry
+     estimated scf accuracy    <       0.00783706 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.90E-05,  avg # of iterations =  6.0
+
+     negative rho (up, down):  1.893E-07 0.000E+00
+
+     total cpu time spent up to now is        2.9 secs
+
+     total energy              =     -77.96926773 Ry
+     estimated scf accuracy    <       0.00026844 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.68E-06,  avg # of iterations =  4.0
+
+     negative rho (up, down):  2.425E-08 0.000E+00
+
+     total cpu time spent up to now is        3.3 secs
+
+     total energy              =     -77.96930390 Ry
+     estimated scf accuracy    <       0.00000997 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  6.23E-08,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        3.6 secs
+
+     total energy              =     -77.96930613 Ry
+     estimated scf accuracy    <       0.00000035 Ry
+
+     iteration #  7     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.16E-09,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        3.8 secs
+
+     total energy              =     -77.96930619 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  8     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.06E-10,  avg # of iterations =  4.0
+
+     total cpu time spent up to now is        4.1 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 81313 PWs)   bands (ev):
+
+   -28.9829 -28.0534 -13.4658 -12.8252 -12.8252 -12.5485  -9.0220  -9.0220
+    -0.7679  -0.1904  -0.1904   0.6082   1.2115   1.2115   1.3201   1.4399
+
+     highest occupied, lowest unoccupied level (ev):    -9.0220   -0.7679
+
+!    total energy              =     -77.96930620 Ry
+     estimated scf accuracy    <          8.6E-10 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -164.94543007 Ry
+     hartree contribution      =      84.60425251 Ry
+     xc contribution           =     -20.42772088 Ry
+     ewald contribution        =      22.79959223 Ry
+
+     convergence has been achieved in   8 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.04278057    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.04278057    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.060501     Total SCF correction =     0.000040
+
+
+     Computing stress (Cartesian axis) and pressure
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=        1.27
+   0.00002715   0.00000000   0.00000000            3.99        0.00        0.00
+   0.00000000  -0.00000059   0.00000000            0.00       -0.09        0.00
+   0.00000000   0.00000000  -0.00000059            0.00        0.00       -0.09
+
+     TDPW(debug): Save memory used to ./pwscf.memory
+ CNQedir           1 alat   1.88972612462577      tau   6.15199992500000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.615199992500000     
+ saw(emaxpos,eopreg, tvectb ) -0.434800007500000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)  -8.21652933160231     
+ zvia*saw*(alat/bmod)  -49.2991759896138     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   3.84800007500000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.384800007500000     
+ saw(emaxpos,eopreg, tvectb )  0.334800007500000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   6.32680320697654     
+ zvia*saw*(alat/bmod)   37.9608192418592     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.500000004300000     
+ saw(emaxpos,eopreg, tvectb )  0.449999961300000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376682949195     
+ zvia*saw*(alat/bmod)   34.0150673179678     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   6.15199992500000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   3.84800007500000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   6.15199992500000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   3.84800007500000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+     TDPW: real_dipole<psi|er|psi>= -0.2142700E+02 -0.1225331E+03 -0.1225331E+03
+     TDPW: imag_dipole<psi|er|psi>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: ion_dipole3=  0.3206971E+02  0.1924183E+03  0.1924183E+03
+     TDPW: tot_dipole3=  0.1064271E+02  0.6988525E+02  0.6988525E+02
+     TDPW: current_real_<psi|eP|psi> is   0.1941968E-07  0.2633899E-08 -0.5483626E-08
+     TDPW: current_imag_<psi|eP|psi> is  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: real_<psi_R|momentum(rXP)|psi_R>=  0.3704657E-07 -0.6627824E-07  0.8915508E-07
+     TDPW: imag_<psi_R|momentum(rXP)|psi_R>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+
+     TDPW: Analysis done ( TDSaveStep = 1 ). Cpu time to now:         5.1 secs
+
+     BFGS Geometry Optimization
+
+     number of scf cycles    =   1
+     number of bfgs steps    =   0
+
+     energy   new            =     -77.9693061990 Ry
+
+     new trust radius        =       0.0427805725 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (alat)
+O             6.1746384290        5.0000000000        5.0000000000
+O             3.8253615710        5.0000000000        5.0000000000
+C             5.0000000430        5.0000000000        5.0000000000
+
+
+
+     Writing output data file ./pwscf.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  3.839E-06 0.000E+00
+      
+     =====================
+     MD step ( Diagon ) = 2 )
+     =====================
+
+     TDPW: Electric field is     0.000000000    0.000000000    0.000000000
+     TDPW: Not add force and energy of field with atoms now
+
+     total cpu time spent up to now is        5.3 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  7.0
+
+     negative rho (up, down):  7.845E-07 0.000E+00
+
+     total cpu time spent up to now is        5.9 secs
+
+     total energy              =     -77.96823589 Ry
+     estimated scf accuracy    <       0.00209406 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.31E-05,  avg # of iterations =  2.0
+
+     negative rho (up, down):  2.648E-07 0.000E+00
+
+     total cpu time spent up to now is        6.2 secs
+
+     total energy              =     -77.96884023 Ry
+     estimated scf accuracy    <       0.00024354 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.52E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  3.444E-08 0.000E+00
+
+     total cpu time spent up to now is        6.5 secs
+
+     total energy              =     -77.96888083 Ry
+     estimated scf accuracy    <       0.00000491 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.07E-08,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        6.7 secs
+
+     total energy              =     -77.96888155 Ry
+     estimated scf accuracy    <       0.00000478 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.99E-08,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        7.0 secs
+
+     total energy              =     -77.96888241 Ry
+     estimated scf accuracy    <       0.00000004 Ry
+
+     iteration #  6     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  2.38E-10,  avg # of iterations =  4.0
+
+     total cpu time spent up to now is        7.3 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 81313 PWs)   bands (ev):
+
+   -28.7276 -27.7855 -13.5847 -12.6201 -12.6201 -12.5506  -9.0080  -9.0080
+    -0.8558  -0.5853  -0.5853   0.5588   1.2139   1.2139   1.3155   1.4352
+
+     highest occupied, lowest unoccupied level (ev):    -9.0080   -0.8558
+
+!    total energy              =     -77.96888243 Ry
+     estimated scf accuracy    <          8.3E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -162.84996360 Ry
+     hartree contribution      =      83.56012401 Ry
+     xc contribution           =     -20.33543598 Ry
+     ewald contribution        =      21.65639314 Ry
+
+     convergence has been achieved in   6 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.05031084    0.00000000    0.00000000
+     atom    2 type  1   force =     0.05031084    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.071150     Total SCF correction =     0.000009
+
+
+     Computing stress (Cartesian axis) and pressure
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -1.70
+  -0.00003351   0.00000000   0.00000000           -4.93        0.00        0.00
+   0.00000000  -0.00000055   0.00000000            0.00       -0.08        0.00
+   0.00000000   0.00000000  -0.00000055            0.00        0.00       -0.08
+
+     TDPW(debug): Save memory used to ./pwscf.memory
+ CNQedir           1 alat   1.88972612462577      tau   6.17463842902364     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.617463842902364     
+ saw(emaxpos,eopreg, tvectb ) -0.432536157097636     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)  -8.17374875912638     
+ zvia*saw*(alat/bmod)  -49.0424925547583     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   3.82536157097636     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.382536157097636     
+ saw(emaxpos,eopreg, tvectb )  0.332536157097636     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   6.28402263450062     
+ zvia*saw*(alat/bmod)   37.7041358070037     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.500000004300000     
+ saw(emaxpos,eopreg, tvectb )  0.449999961300000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376682949195     
+ zvia*saw*(alat/bmod)   34.0150673179678     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   6.17463842902364     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   3.82536157097636     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   6.17463842902364     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   3.82536157097636     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+     TDPW: real_dipole<psi|er|psi>= -0.2024289E+02 -0.1222894E+03 -0.1222894E+03
+     TDPW: imag_dipole<psi|er|psi>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: ion_dipole3=  0.3206971E+02  0.1924183E+03  0.1924183E+03
+     TDPW: tot_dipole3=  0.1182682E+02  0.7012885E+02  0.7012885E+02
+     TDPW: current_real_<psi|eP|psi> is   0.3296336E-08 -0.2287343E-08  0.1460034E-08
+     TDPW: current_imag_<psi|eP|psi> is  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: real_<psi_R|momentum(rXP)|psi_R>= -0.1286152E-07 -0.1348607E-07  0.1404375E-07
+     TDPW: imag_<psi_R|momentum(rXP)|psi_R>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+
+     TDPW: Analysis done ( TDSaveStep = 2 ). Cpu time to now:         8.2 secs
+
+     number of scf cycles    =   2
+     number of bfgs steps    =   1
+
+     energy   old            =     -77.9693061990 Ry
+     energy   new            =     -77.9688824309 Ry
+
+     CASE: energy  _new > energy  _old
+
+     new trust radius        =       0.0191708327 bohr
+     new conv_thr            =       0.0000000100 Ry
+
+
+ATOMIC_POSITIONS (alat)
+O             6.1621446928        5.0000000000        5.0000000000
+O             3.8378553072        5.0000000000        5.0000000000
+C             5.0000000430        5.0000000000        5.0000000000
+
+
+
+     Writing output data file ./pwscf.save/
+     NEW-OLD atomic charge density approx. for the potential
+
+     negative rho (up, down):  1.871E-06 0.000E+00
+      
+     =====================
+     MD step ( Diagon ) = 3 )
+     =====================
+
+     TDPW: Electric field is     0.000000000    0.000000000    0.000000000
+     TDPW: Not add force and energy of field with atoms now
+
+     total cpu time spent up to now is        8.4 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  6.0
+
+     negative rho (up, down):  3.663E-07 0.000E+00
+
+     total cpu time spent up to now is        8.9 secs
+
+     total energy              =     -77.96991295 Ry
+     estimated scf accuracy    <       0.00061985 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.87E-06,  avg # of iterations =  2.0
+
+     negative rho (up, down):  1.123E-07 0.000E+00
+
+     total cpu time spent up to now is        9.2 secs
+
+     total energy              =     -77.97009091 Ry
+     estimated scf accuracy    <       0.00006881 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  4.30E-07,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        9.4 secs
+
+     total energy              =     -77.97010255 Ry
+     estimated scf accuracy    <       0.00000060 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  3.77E-09,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is        9.7 secs
+
+     total energy              =     -77.97010262 Ry
+     estimated scf accuracy    <       0.00000013 Ry
+
+     iteration #  5     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  7.86E-10,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       10.0 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 81313 PWs)   bands (ev):
+
+   -28.8689 -27.9328 -13.5194 -12.7325 -12.7325 -12.5498  -9.0160  -9.0160
+    -0.8053  -0.3702  -0.3702   0.5866   1.2125   1.2125   1.3181   1.4378
+
+     highest occupied, lowest unoccupied level (ev):    -9.0160   -0.8053
+
+!    total energy              =     -77.97010263 Ry
+     estimated scf accuracy    <          9.5E-09 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -163.99796877 Ry
+     hartree contribution      =      84.13211070 Ry
+     xc contribution           =     -20.38584071 Ry
+     ewald contribution        =      22.28159615 Ry
+
+     convergence has been achieved in   5 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =    -0.00078252    0.00000000    0.00000000
+     atom    2 type  1   force =     0.00078252    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.001107     Total SCF correction =     0.000335
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+
+     Computing stress (Cartesian axis) and pressure
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -0.10
+  -0.00000093   0.00000000   0.00000000           -0.14        0.00        0.00
+   0.00000000  -0.00000055   0.00000000            0.00       -0.08        0.00
+   0.00000000   0.00000000  -0.00000055            0.00        0.00       -0.08
+
+     TDPW(debug): Save memory used to ./pwscf.memory
+ CNQedir           1 alat   1.88972612462577      tau   6.16214469276882     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.616214469276882     
+ saw(emaxpos,eopreg, tvectb ) -0.433785530723118     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)  -8.19735849892130     
+ zvia*saw*(alat/bmod)  -49.1841509935278     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   3.83785530723118     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.383785530723118     
+ saw(emaxpos,eopreg, tvectb )  0.333785530723118     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   6.30763237429553     
+ zvia*saw*(alat/bmod)   37.8457942457732     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.500000004300000     
+ saw(emaxpos,eopreg, tvectb )  0.449999961300000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376682949195     
+ zvia*saw*(alat/bmod)   34.0150673179678     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   6.16214469276882     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   3.83785530723118     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   6.16214469276882     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   3.83785530723118     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+     TDPW: real_dipole<psi|er|psi>= -0.2088740E+02 -0.1224232E+03 -0.1224232E+03
+     TDPW: imag_dipole<psi|er|psi>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: ion_dipole3=  0.3206971E+02  0.1924183E+03  0.1924183E+03
+     TDPW: tot_dipole3=  0.1118231E+02  0.6999513E+02  0.6999513E+02
+     TDPW: current_real_<psi|eP|psi> is  -0.1708186E-08  0.4584304E-09 -0.3753174E-10
+     TDPW: current_imag_<psi|eP|psi> is  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: real_<psi_R|momentum(rXP)|psi_R>=  0.5142731E-08  0.6349128E-08 -0.9464064E-08
+     TDPW: imag_<psi_R|momentum(rXP)|psi_R>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+
+     TDPW: Analysis done ( TDSaveStep = 3 ). Cpu time to now:        10.9 secs
+
+     number of scf cycles    =   3
+     number of bfgs steps    =   1
+
+     energy   old            =     -77.9693061990 Ry
+     energy   new            =     -77.9701026317 Ry
+
+     CASE: energy  _new < energy  _old
+
+     new trust radius        =       0.0003443646 bohr
+     new conv_thr            =       0.0000000008 Ry
+
+
+ATOMIC_POSITIONS (alat)
+O             6.1619624629        5.0000000000        5.0000000000
+O             3.8380375371        5.0000000000        5.0000000000
+C             5.0000000430        5.0000000000        5.0000000000
+
+
+
+     Writing output data file ./pwscf.save/
+     NEW-OLD atomic charge density approx. for the potential
+      
+     =====================
+     MD step ( Diagon ) = 4 )
+     =====================
+
+     TDPW: Electric field is     0.000000000    0.000000000    0.000000000
+     TDPW: Not add force and energy of field with atoms now
+
+     total cpu time spent up to now is       11.1 secs
+
+     Self-consistent Calculation
+
+     iteration #  1     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.00E-06,  avg # of iterations =  2.0
+
+     Threshold (ethr) on eigenvalues was too large:
+     Diagonalizing with lowered threshold
+
+     Davidson diagonalization with overlap
+     ethr =  7.57E-10,  avg # of iterations =  4.0
+
+     total cpu time spent up to now is       11.6 secs
+
+     total energy              =     -77.97010285 Ry
+     estimated scf accuracy    <       0.00000009 Ry
+
+     iteration #  2     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  5.71E-10,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       11.9 secs
+
+     total energy              =     -77.97010288 Ry
+     estimated scf accuracy    <       0.00000002 Ry
+
+     iteration #  3     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.21E-10,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       12.2 secs
+
+     total energy              =     -77.97010288 Ry
+     estimated scf accuracy    <          3.1E-09 Ry
+
+     iteration #  4     ecut=    80.00 Ry     beta= 0.70
+     Davidson diagonalization with overlap
+     ethr =  1.97E-11,  avg # of iterations =  2.0
+
+     total cpu time spent up to now is       12.5 secs
+
+     End of self-consistent calculation
+
+          k = 0.0000 0.0000 0.0000 ( 81313 PWs)   bands (ev):
+
+   -28.8704 -27.9345 -13.5181 -12.7337 -12.7337 -12.5494  -9.0158  -9.0158
+    -0.8045  -0.3666  -0.3666   0.5870   1.2125   1.2125   1.3181   1.4378
+
+     highest occupied, lowest unoccupied level (ev):    -9.0158   -0.8045
+
+!    total energy              =     -77.97010288 Ry
+     estimated scf accuracy    <          1.0E-10 Ry
+
+     The total energy is the sum of the following terms:
+     one-electron contribution =    -164.01449096 Ry
+     hartree contribution      =      84.14008854 Ry
+     xc contribution           =     -20.38651874 Ry
+     ewald contribution        =      22.29081828 Ry
+
+     convergence has been achieved in   4 iterations
+
+     Forces acting on atoms (cartesian axes, Ry/au):
+
+     atom    1 type  1   force =     0.00002709    0.00000000    0.00000000
+     atom    2 type  1   force =    -0.00002709    0.00000000    0.00000000
+     atom    3 type  2   force =     0.00000000    0.00000000    0.00000000
+
+     Total force =     0.000038     Total SCF correction =     0.000032
+     SCF correction compared to forces is large: reduce conv_thr to get better values
+
+
+     Computing stress (Cartesian axis) and pressure
+
+          total   stress  (Ry/bohr**3)                   (kbar)     P=       -0.08
+  -0.00000044   0.00000000   0.00000000           -0.06        0.00        0.00
+   0.00000000  -0.00000060   0.00000000            0.00       -0.09        0.00
+   0.00000000   0.00000000  -0.00000060            0.00        0.00       -0.09
+
+     TDPW(debug): Save memory used to ./pwscf.memory
+ CNQedir           1 alat   1.88972612462577      tau   6.16196246288576     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.616196246288576     
+ saw(emaxpos,eopreg, tvectb ) -0.433803753711424     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)  -8.19770286349201     
+ zvia*saw*(alat/bmod)  -49.1862171809520     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   3.83803753711424     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.383803753711424     
+ saw(emaxpos,eopreg, tvectb )  0.333803753711424     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   6.30797673886624     
+ zvia*saw*(alat/bmod)   37.8478604331974     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           1 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.100000000000000     
+  0.000000000000000E+000  0.000000000000000E+000 tvectb  0.500000004300000     
+ saw(emaxpos,eopreg, tvectb )  0.449999961300000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376682949195     
+ zvia*saw*(alat/bmod)   34.0150673179678     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   6.16196246288576     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   3.83803753711424     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           2 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.100000000000000       0.000000000000000E+000 tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   6.16196246288576     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   3.83803753711424     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   51.0226053648958     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+ CNQedir           3 alat   1.88972612462577      tau   5.00000004300000     
+   5.00000000000000        5.00000000000000      bg  0.000000000000000E+000
+  0.000000000000000E+000  0.100000000000000      tvectb  0.500000000000000     
+ saw(emaxpos,eopreg, tvectb )  0.450000000000000     
+ (alat/bmod)   18.8972612462577     
+ saw*(alat/bmod)   8.50376756081596     
+ zvia*saw*(alat/bmod)   34.0150702432639     
+ (fpi)   12.5663706143592     
+ (omega)   6748.33449460037     
+     TDPW: real_dipole<psi|er|psi>= -0.2089651E+02 -0.1224248E+03 -0.1224248E+03
+     TDPW: imag_dipole<psi|er|psi>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: ion_dipole3=  0.3206971E+02  0.1924183E+03  0.1924183E+03
+     TDPW: tot_dipole3=  0.1117321E+02  0.6999347E+02  0.6999347E+02
+     TDPW: current_real_<psi|eP|psi> is  -0.8763338E-10  0.1812157E-09 -0.2287036E-09
+     TDPW: current_imag_<psi|eP|psi> is  0.0000000E+00  0.0000000E+00  0.0000000E+00
+     TDPW: real_<psi_R|momentum(rXP)|psi_R>=  0.6675314E-09 -0.7403441E-10 -0.6622609E-09
+     TDPW: imag_<psi_R|momentum(rXP)|psi_R>=  0.0000000E+00  0.0000000E+00  0.0000000E+00
+
+     TDPW: Analysis done ( TDSaveStep = 4 ). Cpu time to now:        13.4 secs
+
+     bfgs converged in   4 scf cycles and   2 bfgs steps
+     (criteria: energy <  1.0E-05 Ry, force <  1.0E-04 Ry/Bohr)
+
+     End of BFGS Geometry Optimization
+
+     Final energy   =     -77.9701028805 Ry
+
+     File ./pwscf.bfgs deleted, as requested
+Begin final coordinates
+
+ATOMIC_POSITIONS (alat)
+O             6.1619624629        5.0000000000        5.0000000000
+O             3.8380375371        5.0000000000        5.0000000000
+C             5.0000000430        5.0000000000        5.0000000000
+End final coordinates
+
+
+
+     Writing output data file ./pwscf.save/
+     td_init      :      0.00s CPU      0.00s WALL (       1 calls)
+     td_analysis  :      0.93s CPU      1.00s WALL (       4 calls)
+ 
+     init_run     :      0.42s CPU      1.00s WALL (       1 calls)
+     electrons    :      7.38s CPU      7.68s WALL (       4 calls)
+     update_pot   :      0.53s CPU      0.54s WALL (       3 calls)
+     forces       :      0.61s CPU      0.63s WALL (       4 calls)
+     stress       :      1.79s CPU      1.95s WALL (       4 calls)
+
+     Called by init_run:
+     wfcinit      :      0.06s CPU      0.42s WALL (       1 calls)
+     potinit      :      0.06s CPU      0.08s WALL (       1 calls)
+     hinit0       :      0.12s CPU      0.27s WALL (       1 calls)
+
+     Called by electrons:
+     c_bands      :      5.35s CPU      5.46s WALL (      24 calls)
+     sum_band     :      1.26s CPU      1.28s WALL (      24 calls)
+     v_of_rho     :      0.37s CPU      0.39s WALL (      27 calls)
+     mix_rho      :      0.35s CPU      0.40s WALL (      24 calls)
+
+     Called by c_bands:
+     init_us_2    :      0.18s CPU      0.18s WALL (      53 calls)
+     cegterg      :      4.96s CPU      5.07s WALL (      24 calls)
+
+     Called by *egterg:
+     cdiaghg      :      0.03s CPU      0.20s WALL (      95 calls)
+     h_psi        :      4.28s CPU      4.54s WALL (     100 calls)
+     g_psi        :      0.04s CPU      0.04s WALL (      75 calls)
+
+     Called by h_psi:
+     h_psi:calbec :      0.21s CPU      0.40s WALL (     100 calls)
+     vloc_psi     :      3.85s CPU      3.91s WALL (     100 calls)
+     add_vuspsi   :      0.19s CPU      0.19s WALL (     100 calls)
+
+     General routines
+     calbec       :      0.25s CPU      0.45s WALL (     120 calls)
+     fft          :      0.49s CPU      0.63s WALL (     125 calls)
+     ffts         :      0.13s CPU      0.13s WALL (      36 calls)
+     fftw         :      4.37s CPU      4.44s WALL (    2748 calls)
+ 
+     Parallel routines
+     fft_scatt_xy :      0.63s CPU      0.64s WALL (    2909 calls)
+     fft_scatt_yz :      1.16s CPU      1.18s WALL (    2909 calls)
+ 
+     PWSCF        :     11.87s CPU     13.45s WALL
+
+ 
+   This run was terminated on:  10: 7:56  15Apr2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

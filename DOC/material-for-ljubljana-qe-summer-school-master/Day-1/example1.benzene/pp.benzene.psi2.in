@@ -1,0 +1,29 @@
+ &INPUTPP
+    !输入数据outdir/prefix.save
+    prefix    =  'test',
+    !outdir    =  '/tmp',
+
+    !处理保存到filplot_XXX
+    filplot   =  'pp.psi2',
+
+    !plot_num,画图的物理量，更多选项INPUT_PP.html
+    plot_num  =  7,
+    !不同的plot_num对应不同参数，下面为plot_num = 7，画psi^2时的选项
+    !plot_num = 7 输出 filplot_KXXX_BXXX, K k点, B band.
+    kpoint    =  1,  !自旋
+    kband(1)  =  1,  !画band [kband(1),kband(2)]
+    kband(2)  =  16,  
+    lsign     =  .true.,  !if true and k point is Gamma, plot |psi|^2 sign(psi)
+ /
+
+!可以不指定PLOT namelist，就不会输出额外的图形数据
+!从INPUTPP的输出后续处理
+&PLOT
+   fileout       =  '.xsf', !拓展名
+   iflag         =  3, !图形维度
+   nfile         =  1, !输入文件数量
+   output_format =  5, !输出文件格式,5 => format suitable for XCRYSDEN  (2D or user-supplied 3D region)
+   weight(1)     =  1.0, !各输入文件权重
+/
+
+

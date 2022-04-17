@@ -1,0 +1,25 @@
+
+     Program NEB v.6.4.1 starts on  8Mar2020 at 14:39:13 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     7 processors
+
+     MPI processes distributed on     1 nodes
+     path-images division:  nimage    =       7
+
+     parsing_file_name: neb.in
+     Reading input from pw_1.in
+ CNQ. ====== check read_namelists from qe
+     Message from routine cell_base_init:
+     DEPRECATED: use true lattice parameter, not A to a.u. conversion factor
+     Reading input from pw_2.in
+ CNQ. ====== check read_namelists from qe
+     Message from routine cell_base_init:
+     DEPRECATED: use true lattice parameter, not A to a.u. conversion factor

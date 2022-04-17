@@ -1,0 +1,5 @@
+&INPUT
+!fildyn='matdyn'
+!filxsf='dynmat.axsf'!输出展示文件
+/
+
